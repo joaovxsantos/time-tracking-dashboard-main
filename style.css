@@ -27,15 +27,21 @@ body {
   gap: 20px;
 }
 
-.container .card {
+.container .item2,
+.container .item3,
+.container .item4,
+.container .item6,
+.container .item6,
+.container .item7 {
   width: 235px;
-  height: 100%;
+  height: 215px;
 }
 
 .item1 {
   background: hsl(235, 46%, 20%);
   grid-area: a1;
   border-radius: 10px;
+  height: 98%;
 }
 
 .card .profile {
@@ -64,7 +70,7 @@ body {
   color: hsl(236, 100%, 87%);
 }
 
-.card .menu {
+.item1 .menu {
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -72,36 +78,87 @@ body {
   height: 30%;
 }
 
-/* .card .menu p{
-    margin-top:15px;
-} */
-
 .item2 {
-  background: purple;
   grid-area: a2;
+  border-radius: 10px 10px 10px 10px;
+}
+.item2 .header {
+  background: hsl(15, 100%, 70%);
+}
+.card .header {
+  display: flex;
+  justify-content: end;
+  height: 20%;
+  overflow: hidden;
+  padding-right: 20px;
+  border-radius: 10px 10px 0 0;
+}
+
+.card .header img {
+  height: 100px;
+}
+
+.card .states {
+  height: 80%;
+  padding: 20px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 10px 10px 10px 10px;
+  background: hsl(235, 46%, 20%);
+  position: relative;
+  z-index: 1;
+  bottom: 5px;
+}
+
+.card .states .num {
+  font-size: 40px;
+  font-weight: 300;
+}
+
+.card .states .head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .item3 {
-  background: black;
   grid-area: a3;
 }
 
+.item3 .header {
+  background: hsl(195, 74%, 62%);
+}
+
 .item4 {
-  background: orange;
   grid-area: a4;
 }
 
+.item4 .header {
+  background: hsl(348, 100%, 68%);
+}
+
 .item5 {
-  background: blue;
   grid-area: a5;
 }
 
+.item5 .header {
+  background: hsl(145, 58%, 55%);
+}
+
 .item6 {
-  background: olivedrab;
   grid-area: a6;
 }
 
+.item6 .header {
+  background: hsl(264, 64%, 52%);
+}
+
 .item7 {
-  background: pink;
   grid-area: a7;
+}
+
+.item7 .header {
+  background: hsl(43, 84%, 65%);
 }
