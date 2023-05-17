@@ -45,7 +45,7 @@ body {
 }
 
 .card .profile {
-  background: hsl(235, 45%, 61%);
+  background: hsl(246, 80%, 60%);
   width: 100%;
   height: 70%;
   padding: 20px;
@@ -68,6 +68,12 @@ body {
 
 .item1 p {
   color: hsl(236, 100%, 87%);
+  transition: all 500ms ease;
+}
+
+.item1 p:hover {
+  color: #fff;
+  cursor: pointer;
 }
 
 .item1 .menu {
@@ -85,6 +91,7 @@ body {
 .item2 .header {
   background: hsl(15, 100%, 70%);
 }
+
 .card .header {
   display: flex;
   justify-content: end;
@@ -95,7 +102,7 @@ body {
 }
 
 .card .header img {
-  height: 100px;
+  height: 80px;
 }
 
 .card .states {
@@ -109,7 +116,13 @@ body {
   background: hsl(235, 46%, 20%);
   position: relative;
   z-index: 1;
-  bottom: 5px;
+  bottom: 8px;
+  transition: all 500ms ease;
+}
+
+.card .states:hover {
+  background-color: hsl(235, 45%, 61%);
+  cursor: pointer;
 }
 
 .card .states .num {
@@ -121,6 +134,10 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.card .week {
+  color: hsl(236, 100%, 87%);
 }
 
 .item3 {
@@ -162,3 +179,12 @@ body {
 .item7 .header {
   background: hsl(43, 84%, 65%);
 }
+
+/* @media screen and (max-width: 1000px) {
+  .container {
+    grid-template: auto auto / auto auto auto auto;
+    grid-template-areas:
+      "a1 a2 a3 a4"
+      "a1 a5 a6 a7";
+  }
+} */
