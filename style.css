@@ -103,6 +103,8 @@ body {
 
 .card .header img {
   height: 80px;
+  position: relative;
+  top: -10px;
 }
 
 .card .states {
